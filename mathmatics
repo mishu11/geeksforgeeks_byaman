@@ -1,3 +1,5 @@
+
+1.
 int checkBit(int pattern, int arr[], int n)
 {
     int count = 0;
@@ -25,3 +27,147 @@ int maxAND (int arr[], int n)
  
     return res;
 }
+
+
+
+
+2.
+float cToF(float n) 
+{ 
+    return ((n * 9.0 / 5.0) + 32.0); 
+} 
+
+3.
+ double x,x1;
+   int d  = b*b - 4*a*c; 
+     double sqrt_val = sqrt(abs(d)); 
+  
+     if (d > 0) 
+     { 
+            x = (-b + sqrt_val) / (2*a);
+            x1 = (-b - sqrt_val )/ (2*a);
+            if (x >= x1){
+                   cout<<floor(x)<<" "<<floor(x1); 
+       }
+            else{
+                cout<<floor(x1)<<' '<<floor(x);
+            }
+     } 
+     else if (d == 0) 
+     {
+         x1 =  -(double)b / (2*a); 
+           cout<<floor(x1)<<" "<<floor(x1);
+     } 
+   
+   else{
+       cout<<"Imaginary";
+   }
+}
+
+
+4.
+long long factorial (int N)
+{
+    //Your code here
+     if (N== 0) 
+        return 1; 
+    return N * factorial(N - 1); 
+}
+
+5.
+int digitsInFactorial(int N)
+{
+    //Your code here
+    if (N < 0) 
+        return 0; 
+  
+    // base case 
+    if (N <= 1) 
+        return 1; 
+  
+    // else iterate through n and calculate the 
+    // value 
+    double digits = 0; 
+    for (int i=2; i<=N; i++) 
+        digits += log10(i); 
+  
+    return floor(digits) + 1;
+} 
+
+6.
+
+
+7.
+bool isPrime(int N)
+{
+    //Your code here
+    if(N<=1) 
+    return false;
+    for(int i=2;i<N;i++)
+    {
+        if(N%i==0)
+        return false;
+    }return true;
+}
+
+8.
+def exactly3Divisors(N):
+    ##Your code here
+    count = 0
+    i = 2
+    while ((i*i)<=N):
+        flag=True
+        j = 2
+        while (j <= i/2):
+            if i%j == 0:
+                flag = False
+            j += 1
+            
+        if flag:
+            count += 1
+        i += 1
+    return (count)
+    
+    
+9.
+int sumUnderModulo(long long a,long long b)
+{
+    int M=1000000007;
+    //your code here
+    long long c,d;
+     c=a%M;
+     d=b%M;
+
+    return (c+d)%M;
+}
+
+10.
+int multiplicationUnderModulo(long long a,long long b)
+{
+    int M=1000000007;
+    //your code here
+    long long c,d;
+     c=a%M;
+     d=b%M;
+
+    return (c*d)%M;
+}
+
+11.
+int modInverse(int a, int m)
+{
+    //Your code here
+    for(int i=0;i<m;i++){
+        if(i*a%m==1)
+        return i;
+    }
+        return -1;
+    
+    
+ 
+}
+
+
+
+
+
